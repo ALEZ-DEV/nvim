@@ -5,7 +5,7 @@ return {
   init = function()
     require("lazyvim.util").lsp.on_attach(function(_, buffer)
       -- stylua: ignore
-      vim.keymap.set("n", "<leader>cd", function()
+      vim.keymap.set("n", "<leader>cb", function()
         vim.g.autoformat = false
         vim.notify("Rust formatter disabled")
       end, { buffer = buffer, desc = "Disable formatting" })
